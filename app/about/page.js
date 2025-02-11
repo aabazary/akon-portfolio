@@ -2,10 +2,8 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import technologies from "@/public/data/technologies"; 
-// import { technologies } from '@/public/data/technologies.json';
 
 export default function About() {
-console.log(technologies)
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12">
       <div className="max-w-5xl w-full">
@@ -29,10 +27,10 @@ console.log(technologies)
               <a href="/resume.pdf" download className="px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:opacity-80 transition">
                 Download Resume
               </a>
-              <a href="https://github.com/yourgithub" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
+              <a href="https://github.com/aabazary" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
                 <FaGithub />
               </a>
-              <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
+              <a href="https://www.linkedin.com/in/ashkon-abazary-19b099213/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
                 <FaLinkedin />
               </a>
             </div>
