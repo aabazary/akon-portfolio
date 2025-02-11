@@ -1,0 +1,80 @@
+[    {
+    "id": 0,
+    "img": "/projects/3dPortfolio.jpg",
+    "title": "3D Portfolio",
+    "desc": "This is a different take on my Portfolio utilizing Three.Js",
+    "github_link": "https://github.com/aabazary/portfolio",
+    "live_link": "https://portfolio-five-tau-56.vercel.app/",
+    "technologies": [
+     "/icons/react.svg",
+     "/icons/threejs.svg"
+    ]
+  },
+    {
+      "id": 1,
+      "img": "/projects/NextRpg.jpg",
+      "title": "Next RPG",
+      "desc": "Text-based role-playing game that allows users to battle, gather resources, and embark on quests to enhance their characters.",
+      "github_link": "https://github.com/aabazary/nextRPG",
+      "live_link": "https://nextrpg.onrender.com",
+      "technologies": [
+        "/icons/tailwind.svg",
+        "/icons/mongodb.svg",
+        "/icons/express.svg",
+        "/icons/react.svg",
+        "/icons/nodejs.svg"
+      ]
+    },
+    {
+      "id": 2,
+      "img": "/projects/Ascension.jpg",
+      "title": "Ascension",
+      "desc": "Game that lets users battle and progress through their journey.",
+      "github_link": "https://github.com/yourrepo/school-system",
+      "live_link": "https://world-of-ascension.onrender.com/",
+      "technologies": [
+        "/icons/tailwind.svg",
+        "/icons/mongodb.svg",
+        "/icons/express.svg",
+        "/icons/react.svg",
+        "/icons/nodejs.svg"
+      ]
+    },
+    {
+      "id": 3,
+      "img": "/projects/TravelApp.jpg",
+      "title": "Mobile Android Vacation App",
+      "desc": "Mobile application designed to help users plan their vacations.",
+      "github_link": "https://github.com/aabazary/MobileVacationApp",
+      "download": "/projects/app-release.apk",
+      "technologies": [
+        "/icons/java.svg",
+        "/icons/androidstudio.png"
+      ]
+    },
+    {
+      "id": 4,
+      "img": "/projects/WeatherDashboard.jpg",
+      "title": "Weather Dashboard",
+      "desc": "Tool that allows users to search for a city and view the current weather as well as a 5-day forecast.",
+      "live_link": "https://aabazary.github.io/weather_dashboard/",
+      "github_link": "https://github.com/aabazary/weather_dashboard",
+      "technologies": [
+        "/icons/javascript.svg",
+        "/icons/html5.svg",
+        "/icons/css.svg"
+      ]
+    },
+    {
+      "id": 5,
+      "img": "/projects/EmployeeManager.jpg",
+      "title": "Employee Manager CLI",
+      "desc": "Command-line application that helps manage company employees. It allows users to add departments, roles, and employees, and view or update their information.",
+      "github_link": "https://github.com/aabazary/employee_tracker",
+      "technologies": [
+        "/icons/javascript.svg",
+        "/icons/mysql.svg",
+        "/icons/nodejs.svg"
+      ]
+    }
+  ]
