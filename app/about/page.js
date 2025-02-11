@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import technologies from "@/public/data/technologies"; 
+import technologies from "@/public/data/technologies";
 
 export default function About() {
   return (
@@ -11,26 +11,63 @@ export default function About() {
         <div className="bg-background shadow-lg rounded-2xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-8">
           {/* Profile Image */}
           <div className="w-40 h-40 md:w-52 md:h-52 rounded-full overflow-hidden border-4 border-primary">
-            <Image src="/akon.jpg" alt="Akon" width={208} height={208} className="object-cover w-full h-full" />
+            <Image
+              src="/akon.jpg"
+              alt="Akon"
+              width={208}
+              height={208}
+              className="object-cover w-full h-full"
+            />
           </div>
 
           {/* Text Section */}
           <div className="text-center md:text-left flex-1">
             <h1 className="text-3xl font-bold text-foreground">About Me</h1>
             <p className="mt-4 text-muted">
-              I'm a passionate full-stack developer with experience in building scalable web applications.
-              I love working with modern technologies to create engaging user experiences.
+              Hi, I’m Akon Abazary, a Full Stack Web Developer with a unique
+              blend of analytical and creative skills. With a Bachelor's in
+              Software Engineering from Western Governors University and an
+              Associate's in Biology from Miramar College, I bring a diverse
+              background to my projects. 
+              <br/>
+              <br/>
+              I have hands-on experience in building
+              dynamic web applications using modern technologies. From mentoring
+              students as a Teacher's Assistant at Trilogy/edX/2U to developing
+              innovative web solutions, I thrive on solving complex challenges
+              and delivering high-quality results. 
+              <br/>
+              <br/>
+              Before diving into tech, I
+              ran a successful auto service business, growing it to $1 million
+              annual gross revenue within two years. This entrepreneurial
+              experience honed my leadership skills. I hope to connect with you
+              soon!
             </p>
 
             {/* Links & Resume */}
             <div className="mt-6 flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="/resume.pdf" download className="px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:opacity-80 transition">
+              <a
+                href="/resume.pdf"
+                download
+                className="px-6 py-2 rounded-lg bg-primary text-white font-semibold hover:opacity-80 transition"
+              >
                 Download Resume
               </a>
-              <a href="https://github.com/aabazary" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
+              <a
+                href="https://github.com/aabazary"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition text-2xl"
+              >
                 <FaGithub />
               </a>
-              <a href="https://www.linkedin.com/in/ashkon-abazary-19b099213/" target="_blank" rel="noopener noreferrer" className="text-foreground hover:text-primary transition text-2xl">
+              <a
+                href="https://www.linkedin.com/in/ashkon-abazary-19b099213/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground hover:text-primary transition text-2xl"
+              >
                 <FaLinkedin />
               </a>
             </div>
@@ -39,7 +76,12 @@ export default function About() {
 
         {/* Technologies Section */}
         <div className="mt-12 bg-background shadow-lg rounded-2xl p-6 md:p-10">
-          <h2 className="text-2xl font-bold text-foreground text-center">Technologies I Work With</h2>
+          <h2 className="text-2xl font-bold text-foreground text-center">
+            I love to learn new technologies
+          </h2>
+          <h2 className="text-2xl font-bold text-foreground text-center">
+            Here are some that I have worked with
+          </h2>
           <div className="mt-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-6 justify-items-center">
             {technologies.map((tech) => (
               <div key={tech.name} className="flex flex-col items-center">
