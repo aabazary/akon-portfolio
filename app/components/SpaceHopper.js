@@ -39,7 +39,6 @@ const SpaceHopper = () => {
     setScore(0);
     scoreRef.current = 0;
     setShowNamePrompt(false);
-    console.log(gameState);
     setGameState({
       player: { x: 50, y: 150, width: 30, height: 30, speed: 4 },
       obstacles: [],
@@ -108,8 +107,6 @@ const SpaceHopper = () => {
           setIsRunning(false);
 
           const lowestHighScore = highScores[highScores.length - 1]?.score || 0;
-          console.log("Lowest High Score:", lowestHighScore);
-          console.log("Current Score:", scoreRef.current);
 
           if (highScores.length < 5 || scoreRef.current > lowestHighScore) {
             setShowNamePrompt(true);
@@ -138,8 +135,15 @@ const SpaceHopper = () => {
       player.y = Math.max(0, Math.min(canvas.height - player.height, player.y));
     }
 
+    function handleTouch(event) {
+      event.preventDefault();
+      player.y = Math.max(0, player.y - player.speed * 5);
+    }
+
     window.addEventListener("keydown", movePlayer);
     canvas.addEventListener("mousemove", handleMouseMove);
+    canvas.addEventListener("touchstart", handleTouch);
+
     gameInterval = setInterval(updateGame, 1000 / 60);
     scoreInterval = setInterval(() => {
       setScore((prev) => {
@@ -147,11 +151,13 @@ const SpaceHopper = () => {
         return prev + 1;
       });
     }, 1000);
+
     return () => {
       clearInterval(gameInterval);
       clearInterval(scoreInterval);
       window.removeEventListener("keydown", movePlayer);
       canvas.removeEventListener("mousemove", handleMouseMove);
+      canvas.removeEventListener("touchstart", handleTouch);
     };
   }, [isRunning, isPaused, highScores]);
 

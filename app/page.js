@@ -15,7 +15,6 @@ export default function HomePage() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [navText, setNavText] = useState("");
 
-  // Type "Hello, My name is Akon."
   useEffect(() => {
     const text = "Hello, My name is Akon.";
     let i = 0;
@@ -27,7 +26,6 @@ export default function HomePage() {
     return () => clearInterval(interval);
   }, []);
 
-  // Typing effect for "I am [roles]"
   useEffect(() => {
     let timeout;
     const currentRole = roles[roleIndex];
@@ -66,15 +64,16 @@ export default function HomePage() {
 
   return (
     <section className="h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
-      <h1 className="text-4xl font-bold text-foreground h-12">
+      <h1 className="text-4xl font-bold text-foreground h-20 sm:h-auto">
         {introText}
       </h1>
-      <h2 className="text-2xl font-semibold text-primary h-10 mt-2">
+      <h2 className="text-2xl font-semibold text-primary mt-6 sm:mt-4">
         I am {roleText}
       </h2>
-      <p className="mt-4 text-lg text-muted-foreground h-16">
+      <p className="mt-8 text-lg text-muted-foreground">
         {navText}
       </p>
+
       <SpaceHopper />
     </section>
   );
