@@ -70,7 +70,7 @@ export default function HomePage() {
       <h2 className="text-2xl font-semibold text-primary mt-6 sm:mt-4">
         I am {roleText}
       </h2>
-      <p className="mt-8 text-lg text-muted-foreground">
+      <p className="mt-8 mb-4 text-lg text-muted-foreground">
         {navText}
       </p>
 

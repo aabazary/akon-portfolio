@@ -145,7 +145,7 @@ const SpaceHopper = () => {
       const touch = event.touches[0];
       const deltaY = touch.clientY - player.startY;
   
-      player.y = Math.max(0, Math.min(canvas.height - player.height, player.y + deltaY * 0.2));
+      player.y = Math.max(0, Math.min(canvas.height - player.height, player.y + deltaY * 1.0));
       player.startY = touch.clientY;
     }
     
