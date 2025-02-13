@@ -119,9 +119,9 @@ const SpaceHopper = () => {
     }
 
     function movePlayer(event) {
-      if (event.key === "ArrowUp" || event.key === "w") {
+      if (event.key === "w") {
         player.y = Math.max(0, player.y - player.speed * 5);
-      } else if (event.key === "ArrowDown" || event.key === "s") {
+      } else if (event.key === "s") {
         player.y = Math.min(
           canvas.height - player.height,
           player.y + player.speed * 5
@@ -193,16 +193,18 @@ const SpaceHopper = () => {
       <div className="flex flex-col items-center md:flex-row justify-between w-[95vw] max-w-[600px] mt-4 text-white gap-2">
         {/* Instructions */}
         <div className="text-center w-4/5 md:w-1/3 md:text-left">
-          <h2 className="text-lg font-semibold">How to Play</h2>
+          <h2 className="text-lg font-semibold">How to Play:</h2>
           <p>🕹 Move: W/ S / Mouse</p>
           <p>⏸ Pause: Escape</p>
           <p>Avoid All Obstacles </p>
           <p>Speed increases over time </p>
+          <p>Conquer the Leaderboard </p>
+
         </div>
 
         {/* High Scores Table */}
         <div className="text-center w-4/5 md:w-1/3 md:text-left">
-          <h2 className="text-lg font-semibold">High Scores</h2>
+          <h2 className="text-lg font-semibold">Leaderboard:</h2>
           <div className="border border-gray-500 rounded-md p-2">
             {highScores.length > 0 ? (
               <table className="w-full text-sm">

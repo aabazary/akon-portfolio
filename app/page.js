@@ -1,36 +1,81 @@
-"use client"
-import { useState, useEffect } from 'react';
-import SpaceHopper from './components/SpaceHopper';
+"use client";
+import { useState, useEffect } from "react";
+import SpaceHopper from "./components/SpaceHopper";
 
+const roles = [
+  "a Software Engineer",
+  "a Full Stack Developer",
+  "an Entrepreneur",
+];
 
 export default function HomePage() {
-  const [text, setText] = useState('');
-  const fullText = "Hi, I'm Akon. A Full Stack Developer.";
-  const [showSubtext, setShowSubtext] = useState(false);
+  const [introText, setIntroText] = useState("");
+  const [roleIndex, setRoleIndex] = useState(0);
+  const [roleText, setRoleText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [navText, setNavText] = useState("");
 
+  // Type "Hello, My name is Akon."
   useEffect(() => {
+    const text = "Hello, My name is Akon.";
     let i = 0;
     const interval = setInterval(() => {
-      setText((prev) => fullText.slice(0, i + 1));
+      setIntroText(text.slice(0, i + 1));
       i++;
-      if (i === fullText.length) {
-        clearInterval(interval);
-        setTimeout(() => setShowSubtext(true), 500);
-      }
+      if (i === text.length) clearInterval(interval);
     }, 50);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Typing effect for "I am [roles]"
+  useEffect(() => {
+    let timeout;
+    const currentRole = roles[roleIndex];
+    if (!isDeleting) {
+      if (roleText.length < currentRole.length) {
+        timeout = setTimeout(() => {
+          setRoleText(currentRole.slice(0, roleText.length + 1));
+        }, 50);
+      } else {
+        timeout = setTimeout(() => setIsDeleting(true), 1200);
+      }
+    } else {
+      if (roleText.length > 0) {
+        timeout = setTimeout(() => {
+          setRoleText(currentRole.slice(0, roleText.length - 1));
+        }, 50);
+      } else {
+        setIsDeleting(false);
+        setRoleIndex((prev) => (prev + 1) % roles.length);
+      }
+    }
+    return () => clearTimeout(timeout);
+  }, [roleText, isDeleting]);
+
+  useEffect(() => {
+    const text =
+      "Feel free to navigate through my portfolio, or become distracted with a fun game below:";
+    let i = 0;
+    const interval = setInterval(() => {
+      setNavText(text.slice(0, i + 1));
+      i++;
+      if (i === text.length) clearInterval(interval);
+    }, 30);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
-      <h1 className="text-4xl font-bold text-foreground">{text}</h1>
-      {showSubtext && (
-        <p className="mt-4 text-lg text-muted-foreground transition-opacity duration-700">
-          Creating modern, scalable web applications.
-        </p>
-      )}
-      <SpaceHopper/>
-     
+      <h1 className="text-4xl font-bold text-foreground h-12">
+        {introText}
+      </h1>
+      <h2 className="text-2xl font-semibold text-primary h-10 mt-2">
+        I am {roleText}
+      </h2>
+      <p className="mt-4 text-lg text-muted-foreground h-16">
+        {navText}
+      </p>
+      <SpaceHopper />
     </section>
   );
 }
