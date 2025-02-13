@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Akon's Portfolio",
   description: "A portfolio showcasing my projects and skills",
 };
 
