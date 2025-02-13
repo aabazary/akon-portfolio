@@ -135,14 +135,29 @@ const SpaceHopper = () => {
       player.y = Math.max(0, Math.min(canvas.height - player.height, player.y));
     }
 
-    function handleTouch(event) {
-      event.preventDefault();
-      player.y = Math.max(0, player.y - player.speed * 5);
+    function handleTouchStart(event) {
+      const touch = event.touches[0];
+      player.startY = touch.clientY;
     }
-
+    
+    function handleTouchMove(event) {
+      event.preventDefault();
+      const touch = event.touches[0];
+      const deltaY = touch.clientY - player.startY;
+  
+      player.y = Math.max(0, Math.min(canvas.height - player.height, player.y + deltaY * 0.2));
+      player.startY = touch.clientY;
+    }
+    
+    function handleTouchEnd() {
+      player.startY = null;
+    }
+    
     window.addEventListener("keydown", movePlayer);
     canvas.addEventListener("mousemove", handleMouseMove);
-    canvas.addEventListener("touchstart", handleTouch);
+    canvas.addEventListener("touchstart", handleTouchStart);
+    canvas.addEventListener("touchmove", handleTouchMove);
+    canvas.addEventListener("touchend", handleTouchEnd);
 
     gameInterval = setInterval(updateGame, 1000 / 60);
     scoreInterval = setInterval(() => {
@@ -157,7 +172,9 @@ const SpaceHopper = () => {
       clearInterval(scoreInterval);
       window.removeEventListener("keydown", movePlayer);
       canvas.removeEventListener("mousemove", handleMouseMove);
-      canvas.removeEventListener("touchstart", handleTouch);
+      canvas.addEventListener("touchstart", handleTouchStart);
+      canvas.addEventListener("touchmove", handleTouchMove);
+      canvas.addEventListener("touchend", handleTouchEnd);
     };
   }, [isRunning, isPaused, highScores]);
 
