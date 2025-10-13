@@ -129,5 +129,55 @@
       "/assets/icons/mysql.svg",
       "/assets/icons/nodejs.svg"
     ]
+  },
+  {
+    "id": 11,
+    "img": "/assets/projects/ReadmeGen.jpg",
+    "title": "README Generator",
+    "desc": "CLI application that allows users to generate a README file based on their input.",
+    "github_link": "https://github.com/aabazary/READMEgen",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+    "id": 12,
+    "img": "/assets/projects/PasswordGenerator.jpg",
+    "title": "Password Generator",
+    "desc": "Password generator that allows users to generate a random password based on their preferences.",
+    "github_link": "https://github.com/aabazary/pw_gen",
+    "live_link": "https://aabazary.github.io/pw_gen/",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/html5.svg",
+      "/assets/icons/css.svg"
+    ]
+  },
+  {
+    "id": 13,
+    "img": "/assets/projects/TeamProfileGen.png",
+    "title": "Team Profile Generator",
+    "desc": "CLI application that allows users to generate a team profile based on their input.",
+    "github_link": "https://github.com/aabazary/team-profile-generator",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/html5.svg",
+      "/assets/icons/css.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+    "id": 14,
+    "img": "/assets/projects/CodeQuiz.jpg",
+    "title": "Code Quiz",
+    "desc": "Quiz game that allows users to test their knowledge of JavaScript.",
+    "github_link": "https://github.com/aabazary/code_quiz",
+    "live_link": "https://aabazary.github.io/code_quiz/",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/html5.svg",
+      "/assets/icons/css.svg"
+    ]
   }
 ]
