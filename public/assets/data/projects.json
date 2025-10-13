@@ -117,5 +117,30 @@
       "/assets/icons/mysql.svg",
       "/assets/icons/nodejs.svg"
     ]
-  }
+  },
+    {
+    "id": 10,
+    "img": "/assets/projects/ECommerceBE.jpg",
+    "title": "E-Commerce Backend",
+    "desc": "Backend for an e-commerce site. Built with Express.js and Sequelize, it provides a RESTful API to manage products, categories, and tags.",
+    "github_link": "https://github.com/aabazary/employee_tracker",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/mysql.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+  "id": 11,
+  "img": "/assets/projects/ECommerceBE.jpg",
+  "title": "E-Commerce Backend",
+  "deployed_link": "https://budget-tracker-sfll.onrender.com/",
+  "desc": "Backend for an e-commerce site. Built with Express.js and Sequelize, it provides a RESTful API to manage products, categories, and tags.",
+  "github_link": "https://github.com/aabazary/budget_tracker",
+  "technologies": [
+    "/assets/icons/javascript.svg",
+    "/assets/icons/mysql.svg",
+    "/assets/icons/nodejs.svg"
+  ]
+}
 ]

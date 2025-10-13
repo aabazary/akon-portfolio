@@ -8,7 +8,7 @@ import * as THREE from 'three';
 interface Ball {
   position: THREE.Vector3;
   velocity: THREE.Vector3;
-  ref: React.RefObject<THREE.Mesh>;
+  ref: React.RefObject<THREE.Mesh | null>;
   color: string;
   size: number;
 }
