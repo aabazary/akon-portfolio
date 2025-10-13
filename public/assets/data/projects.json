@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "img": "/assets/projects/Ascension2.jpg",
+    "title": "Ascension 2",
+    "desc": "An improved version of my previous Ascension game.",
+    "github_link": "https://github.com/aabazary/ascension2",
+    "live_link": "https://ascension2.vercel.app/",
+    "technologies": [
+      "/assets/icons/tailwind.svg",
+      "/assets/icons/mongodb.svg",
+      "/assets/icons/express.svg",
+      "/assets/icons/react.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+    "id": 2,
+    "img": "/assets/projects/Stocks.jpg",
+    "title": "Stock Tracker",
+    "desc": "Allows users to check the status of stocks, and save them using local storage.",
+    "github_link": "https://github.com/aabazary/stocks",
+    "live_link": "https://stocks-ij7m0cxfu-aabazarys-projects.vercel.app/",
+    "technologies": [
+      "/assets/icons/tailwind.svg",
+      "/assets/icons/react.svg"
+    ]
+  },
+  {
+    "id": 3,
+    "img": "/assets/projects/NextRpg.jpg",
+    "title": "Next RPG",
+    "desc": "Text-based role-playing game that allows users to battle, gather resources, and embark on quests to enhance their characters.",
+    "github_link": "https://github.com/aabazary/nextRPG",
+    "live_link": "https://nextrpg.onrender.com",
+    "technologies": [
+      "/assets/icons/tailwind.svg",
+      "/assets/icons/mongodb.svg",
+      "/assets/icons/express.svg",
+      "/assets/icons/react.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+    "id": 4,
+    "img": "/assets/projects/WeatherDashboard.jpg",
+    "title": "Weather Dashboard",
+    "desc": "Tool that allows users to search for a city and view the current weather as well as a 5-day forecast.",
+    "live_link": "https://aabazary.github.io/weather_dashboard/",
+    "github_link": "https://github.com/aabazary/weather_dashboard",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/html5.svg",
+      "/assets/icons/css.svg"
+    ]
+  },
+  {
+    "id": 5,
+    "img": "/assets/projects/Smite2Companion.jpg",
+    "title": "Smite 2 Companion App",
+    "desc": "A companion app allowing teams to generate randomized team comps for the game Smite 2.",
+    "github_link": "https://github.com/aabazary/smiteDos",
+    "live_link": "https://smite-dos.vercel.app/",
+    "technologies": [
+      "/assets/icons/tailwind.svg",
+      "/assets/icons/react.svg"
+    ]
+  },
+  {
+    "id": 6,
+    "img": "/assets/projects/Ascension.jpg",
+    "title": "Ascension",
+    "desc": "Game that lets users battle and progress through their journey. Currently image hosting has been discontinued, so the game is no longer playable. Ascension 2 is a better version of this game.",
+    "github_link": "https://github.com/aabazary/World_of_Ascension",
+    "live_link": "https://world-of-ascension.onrender.com/",
+    "technologies": [
+      "/assets/icons/tailwind.svg",
+      "/assets/icons/mongodb.svg",
+      "/assets/icons/express.svg",
+      "/assets/icons/react.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  },
+  {
+    "id": 7,
+    "img": "/assets/projects/3dPortfolio.jpg",
+    "title": "3D Portfolio",
+    "desc": "This is a different take on my Portfolio utilizing Three.Js",
+    "github_link": "https://github.com/aabazary/portfolio",
+    "live_link": "https://portfolio-five-tau-56.vercel.app/",
+    "technologies": [
+      "/assets/icons/react.svg",
+      "/assets/icons/threejs.svg"
+    ]
+  },
+  {
+    "id": 8,
+    "img": "/assets/projects/TravelApp.jpg",
+    "title": "Mobile Android Vacation App",
+    "desc": "Mobile application designed to help users plan their vacations.",
+    "github_link": "https://github.com/aabazary/MobileVacationApp",
+    "download": "/assets/projects/app-release.apk",
+    "technologies": [
+      "/assets/icons/java.svg",
+      "/assets/icons/androidstudio.png"
+    ]
+  },
+  
+  {
+    "id": 9,
+    "img": "/assets/projects/EmployeeManager.jpg",
+    "title": "Employee Manager CLI",
+    "desc": "Command-line application that helps manage company employees. It allows users to add departments, roles, and employees, and view or update their information.",
+    "github_link": "https://github.com/aabazary/employee_tracker",
+    "technologies": [
+      "/assets/icons/javascript.svg",
+      "/assets/icons/mysql.svg",
+      "/assets/icons/nodejs.svg"
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+/* Theme Configuration */
+/* This file contains all the color schemes and can be easily modified */
+
+/* Default Theme - Cyberpunk */
+:root {
+  /* Core Colors */
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-background-secondary: #111111;
+  --color-background-tertiary: #1a1a1a;
+  
+  /* Primary Color Palette - Cyan */
+  --color-primary: #00ffff;
+  --color-primary-light: #33ffff;
+  --color-primary-dark: #00cccc;
+  --color-primary-rgb: 0, 255, 255;
+  
+  /* Secondary Color Palette - Blue */
+  --color-secondary: #0099ff;
+  --color-secondary-light: #33aaff;
+  --color-secondary-dark: #0066cc;
+  --color-secondary-rgb: 0, 153, 255;
+  
+  /* Accent Color Palette - Green */
+  --color-accent: #00ff88;
+  --color-accent-light: #33ffaa;
+  --color-accent-dark: #00cc66;
+  --color-accent-rgb: 0, 255, 136;
+  
+  /* Additional Colors */
+  --color-purple: #a855f7;
+  --color-purple-light: #c084fc;
+  --color-purple-dark: #7c3aed;
+  --color-purple-rgb: 168, 85, 247;
+  
+  --color-green: #10b981;
+  --color-green-light: #34d399;
+  --color-green-dark: #059669;
+  --color-green-rgb: 16, 185, 129;
+}
+
+/* Alternative Theme Examples (commented out) */
+
+/* Neon Purple Theme */
+/*
+:root {
+  --color-background: #0a0a0a;
+  --color-foreground: #ffffff;
+  --color-background-secondary: #1a0a2e;
+  --color-background-tertiary: #2a1a4e;
+  
+  --color-primary: #ff00ff;
+  --color-primary-light: #ff33ff;
+  --color-primary-dark: #cc00cc;
+  --color-primary-rgb: 255, 0, 255;
+  
+  --color-secondary: #8000ff;
+  --color-secondary-light: #9933ff;
+  --color-secondary-dark: #6600cc;
+  --color-secondary-rgb: 128, 0, 255;
+  
+  --color-accent: #ff0080;
+  --color-accent-light: #ff33a0;
+  --color-accent-dark: #cc0066;
+  --color-accent-rgb: 255, 0, 128;
+  
+  --color-purple: #a855f7;
+  --color-purple-light: #c084fc;
+  --color-purple-dark: #7c3aed;
+  --color-purple-rgb: 168, 85, 247;
+  
+  --color-green: #00ff80;
+  --color-green-light: #33ffa0;
+  --color-green-dark: #00cc66;
+  --color-green-rgb: 0, 255, 128;
+}
+*/
+
+/* Matrix Green Theme */
+/*
+:root {
+  --color-background: #000000;
+  --color-foreground: #00ff00;
+  --color-background-secondary: #001100;
+  --color-background-tertiary: #002200;
+  
+  --color-primary: #00ff00;
+  --color-primary-light: #33ff33;
+  --color-primary-dark: #00cc00;
+  --color-primary-rgb: 0, 255, 0;
+  
+  --color-secondary: #00aa00;
+  --color-secondary-light: #00dd00;
+  --color-secondary-dark: #008800;
+  --color-secondary-rgb: 0, 170, 0;
+  
+  --color-accent: #00ffaa;
+  --color-accent-light: #33ffbb;
+  --color-accent-dark: #00cc88;
+  --color-accent-rgb: 0, 255, 170;
+  
+  --color-purple: #aa00ff;
+  --color-purple-light: #bb33ff;
+  --color-purple-dark: #8800cc;
+  --color-purple-rgb: 170, 0, 255;
+  
+  --color-green: #00ff00;
+  --color-green-light: #33ff33;
+  --color-green-dark: #00cc00;
+  --color-green-rgb: 0, 255, 0;
+}
+*/
+
+/* Sunset Orange Theme */
+/*
+:root {
+  --color-background: #0f0f0f;
+  --color-foreground: #ffffff;
+  --color-background-secondary: #1a0f0f;
+  --color-background-tertiary: #2a1f1f;
+  
+  --color-primary: #ff4500;
+  --color-primary-light: #ff6633;
+  --color-primary-dark: #cc3700;
+  --color-primary-rgb: 255, 69, 0;
+  
+  --color-secondary: #ff6b35;
+  --color-secondary-light: #ff8c5a;
+  --color-secondary-dark: #cc5529;
+  --color-secondary-rgb: 255, 107, 53;
+  
+  --color-accent: #ffa500;
+  --color-accent-light: #ffb833;
+  --color-accent-dark: #cc8400;
+  --color-accent-rgb: 255, 165, 0;
+  
+  --color-purple: #ff1493;
+  --color-purple-light: #ff4da6;
+  --color-purple-dark: #cc1076;
+  --color-purple-rgb: 255, 20, 147;
+  
+  --color-green: #32cd32;
+  --color-green-light: #5cd65c;
+  --color-green-dark: #28a428;
+  --color-green-rgb: 50, 205, 50;
+}
+*/

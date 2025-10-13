@@ -1,0 +1,123 @@
+[
+    {
+      "name": "HTML",
+      "icon": "/assets/icons/html5.svg"
+    },
+    {
+      "name": "CSS",
+      "icon": "/assets/icons/css.svg"
+    },
+    {
+      "name": "Javascript",
+      "icon": "/assets/icons/javascript.svg"
+    },
+    {
+      "name": "React",
+      "icon": "/assets/icons/react.svg"
+    },
+    {
+      "name": "MongoDB",
+      "icon": "/assets/icons/mongodb.svg"
+    },
+    {
+      "name": "MySQL",
+      "icon": "/assets/icons/mysql.svg"
+    },
+    {
+      "name": "PostgreSQL",
+      "icon": "/assets/icons/postgresql.svg"
+    },
+    {
+      "name": "Node",
+      "icon": "/assets/icons/nodejs.svg"
+    },
+    {
+      "name": "Tailwind",
+      "icon": "/assets/icons/tailwind.svg"
+    },
+    {
+      "name": "Java",
+      "icon": "/assets/icons/java.svg"
+    },
+    {
+      "name": "Python",
+      "icon": "/assets/icons/python.svg"
+    },
+    {
+      "name": "Express",
+      "icon": "/assets/icons/express.svg"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "/assets/icons/bootstrap.svg"
+    },
+    {
+      "name": "Android Studio",
+      "icon": "/assets/icons/androidstudio.png"
+    },
+    {
+      "name": "Angular",
+      "icon": "/assets/icons/angular.svg"
+    },
+    {
+      "name": "Mongoose",
+      "icon": "/assets/icons/mongoose.svg"
+    },
+    {
+      "name": "Chat GPT",
+      "icon": "/assets/icons/chatgpt.svg"
+    },
+    {
+      "name": "Handlebars",
+      "icon": "/assets/icons/handlebars.svg"
+    },
+    {
+      "name": "Git",
+      "icon": "/assets/icons/git.svg"
+    },
+    {
+      "name": "GitHub",
+      "icon": "/assets/icons/github.svg"
+    },
+    {
+      "name": "GitLab",
+      "icon": "/assets/icons/gitlab.svg"
+    },
+    {
+      "name": "Insomnia",
+      "icon": "/assets/icons/insomnia.svg"
+    },
+    {
+      "name": "Postman",
+      "icon": "/assets/icons/postman.svg"
+    },
+    {
+      "name": "Heroku",
+      "icon": "/assets/icons/heroku.svg"
+    },
+    {
+      "name": "Render",
+      "icon": "/assets/icons/render.svg"
+    },
+    {
+      "name": "Vercel",
+      "icon": "/assets/icons/vercel.svg"
+    },
+    {
+      "name": "Sequelize",
+      "icon": "/assets/icons/sequelizejs.svg"
+    },
+    {
+      "name": "JQuery",
+      "icon": "/assets/icons/jquery.svg"
+    },
+    {
+      "name": "TypeScript",
+      "icon": "/assets/icons/typescript.svg"
+    },
+    {
+      "name": "Figma",
+      "icon": "/assets/icons/figma.svg"
+    }
+  ]
+  
