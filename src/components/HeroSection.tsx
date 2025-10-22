@@ -156,7 +156,7 @@ const HeroSection = () => {
             className="lg:relative flex items-center justify-center lg:pl-12 w-full"
           >
             {/* Floating Cards/Stats - Horizontal on Mobile, positioned at bottom */}
-            <div className="absolute lg:relative bottom-8 lg:bottom-auto left-0 lg:left-auto right-0 lg:right-auto w-full flex flex-row lg:flex-col gap-2 lg:gap-6 justify-center lg:justify-start max-w-full lg:max-w-md px-3 lg:px-0 z-10">
+            <div className="absolute lg:relative bottom-16 lg:bottom-auto left-0 lg:left-auto right-0 lg:right-auto w-full flex flex-row lg:flex-col gap-2 lg:gap-6 justify-center lg:justify-start max-w-full lg:max-w-md px-3 lg:px-0 z-10">
               
               {/* Stats Card 1 */}
               <motion.div
