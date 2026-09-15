@@ -209,7 +209,7 @@ const AboutSection = () => {
 
                     {/* Resume Download Button */}
                     <motion.a
-                      href="/assets/Ashkon_Akon_ Abazary_Resume.pdf"
+                      href="/assets/Ashkon_Akon_Abazary_Resume.pdf"
                       download="Ashkon_Abazary_Resume.pdf"
                       className="flex items-center gap-1 px-3 py-2 rounded-lg glass hover:bg-cyan-500/20 border border-cyan-500/30 hover:border-cyan-500 transition-all duration-300"
                       whileHover={{ scale: 1.05 }}
